@@ -1,0 +1,44 @@
+1. MEAN Stack, MVC
+2. Functions
+		A. Create new posts (either write a post or a link)
+		B. View all posts and comments ordered by upvotes
+		C. Add comments about a given post
+		D. Upvote posts and comments
+		E. Authentication
+3. SPA
+4. REST
+5. Authentication part:
+	A. Passport
+	B. jwt
+	
+
+
+
+
+	1. UserSchema (to store user authentication info)
+		A. fields: hash & salt 
+		B. 3 methods: set password, varify password, generate jwt
+		C. jwt
+	2. Passport
+		A. Node authentication middleware designed for authenticating incoming requests. 
+		B. local strategy
+
+
+
+
+
+
+2. Ui-router module ($stateProvider,$urlRouteProvider)
+		A. $stateProvider state() - binds properties to that state. (url,templateUrl,controller,resolve)
+		B. $urlRouteProvider otherwise() - deal with bad routes that do not match any ot the state.
+	3. Controller 
+		A. initialize views that binds to this controller and provide methods that serve relative logics 
+	4. 2 custom services  (app.factory)
+		A. Expose variables and methods to those who need access to them but outside of this context
+		B. In this project services are where front end make http requests through $http services like login or write and store a new post.
+		C. Posts service. Auth service. All controllers can get access through dependency injection
+Back-end
+	1. Express nodejs
+	2. Mongodb
+		A. mongoose
+
